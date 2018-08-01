@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <meta content="email=no" name="format-detection">
+    <link rel="stylesheet" href="../lib/swiper-4.2.0.min.css">
+    <link rel="stylesheet" href="../lib/mobileSelect.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/calendar.css">
+    <script src="../lib/jquery-1.9.1.min.js"></script>
+    <script src="../js/common.js"></script>
+    <title>日历</title>
+</head>
+<body>
+<div class="calendar">
+    <!--年月-->
+    <div class="calendar-header">
+        <p id="month"></p>
+        <img src="../images/calendar/icon_select_triangle@2x.png" alt="">
+    </div>
+    <!--星期-->
+    <ul class="week">
+        <li>日</li>
+        <li>一</li>
+        <li>二</li>
+        <li>三</li>
+        <li>四</li>
+        <li>五</li>
+        <li>六</li>
+    </ul>
+    <!--可滑动日历区域-->
+    <div class="swiper-container" id="calendar-swiper">
+        <div class="swiper-wrapper">
+            <ul class="swiper-slide calendar-date calendar-date1"></ul>
+            <ul class="swiper-slide calendar-date calendar-date2"></ul>
+            <ul class="swiper-slide calendar-date calendar-date3"></ul>
+            <ul class="swiper-slide calendar-date calendar-date4"></ul>
+            <ul class="swiper-slide calendar-date calendar-date5"></ul>
+            <ul class="swiper-slide calendar-date calendar-date6"></ul>
+            <ul class="swiper-slide calendar-date calendar-date7"></ul>
+            <ul class="swiper-slide calendar-date calendar-date8"></ul>
+            <ul class="swiper-slide calendar-date calendar-date9"></ul>
+            <ul class="swiper-slide calendar-date calendar-date10"></ul>
+            <ul class="swiper-slide calendar-date calendar-date11"></ul>
+            <ul class="swiper-slide calendar-date calendar-date12"></ul>
+        </div>
+    </div>
+    <!--日历底部注释-->
+    <div class="calendar-bottom">
+        <div class="info">
+            <p class="spot spot-yellow"></p>
+            <p class="spot-info">当日已读</p>
+        </div>
+        <div class="info">
+            <p class="spot spot-blue"></p>
+            <p class="spot-info">补读</p>
+        </div>
+        <div class="info">
+            <p class="spot spot-grey"></p>
+            <p class="spot-info">未完成</p>
+        </div>
+    </div>
+
+</div>
+<!--免费试读模块-->
+<div class="carousel">
+    <p class="cap">免费试读</p>
+    <div class="swiper-container" id="book-swiper">
+        <div class="swiper-wrapper">
+            <!--根据请求接口数据添加到dom里-->
+            <div class="swiper-slide">
+                <img src="../images/getPrize/test.png" alt="" class="book-img">
+                <p class="book-time">2018-03-06</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="../images/getPrize/test.png" alt="" class="book-img">
+                <p class="book-time">2018-03-06</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="../images/getPrize/test.png" alt="" class="book-img">
+                <p class="book-time">2018-03-06</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="../images/getPrize/test.png" alt="" class="book-img">
+                <p class="book-time">2018-03-06</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部btn(选择显示)-->
+<div class="btn">
+    <p>加入VIP，全站无限听、读</p>
+</div>
+<div class="btn btn">
+    <p>您的VIP还有<span class="red-font">30天</span>到期，立即续费</p>
+</div>
+<div class="btn btn-red">
+    <p>您的VIP已过期，重新加入</p>
+</div>
+
+<!--mask指引部分-->
+<div class="mask">
+    <div class="step1">
+        <div class="guide-arrow guide-arrow-dip">
+            <img src="../images/calendar/pic_arrow01.png" alt="">
+        </div>
+        <div class="guide-info">
+            <p>点选日期</p>
+            <p>查看当日文章</p>
+        </div>
+    </div>
+    <div class="step2">
+        <div class="guide-arrow guide-arrow-left">
+            <img src="../images/calendar/pic_arrow01.png" alt="">
+        </div>
+        <div class="guide-info">
+            <p>左右滑动</p>
+            <p>查看其他日期</p>
+        </div>
+        <div class="guide-arrow guide-arrow-right">
+            <img src="../images/calendar/pic_arrow01.png" alt="">
+        </div>
+    </div>
+</div>
+
+<!--日读的弹框-->
+<div class="mask mask2">
+    <div class="popup popup1">
+        <div class="pop-card"></div>
+        <div class="pop-close"></div>
+    </div>
+</div>
+
+<div class="mask mask2">
+    <div class="popup popup2">
+        <div class="pop-main">
+            <!--里面放广告位-->
+        </div>
+        <div class="pop-close"></div>
+    </div>
+</div>
+
+</body>
+<script src="../lib/swiper-4.2.0.min.js"></script>
+<script src="../lib/mobileSelect.js"></script>
+<script src="../js/create_calendar.js"></script>
+<script src="../js/calendar.js"></script>
+</html>

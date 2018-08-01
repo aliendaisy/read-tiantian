@@ -1,0 +1,498 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #d4ecff;
+}
+main{
+    min-height: calc(100% - .98rem);
+    margin-bottom: .98rem;
+    background: url("../images/game/bg_game01.png") no-repeat;
+    background-size: 100%;
+    background-position: 0 -2rem;
+}
+
+aside{
+    position: relative;
+    top: .26rem;
+    left: .3rem;
+    width: .96rem;
+    height: 5.8rem;
+    border-radius: .06rem;
+    background: rgba(255,255,255,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.icon{
+    position: relative;
+    z-index: 998;
+}
+.icon:nth-of-type(1) {
+    color: rgb(44,187,152);
+}
+.icon:nth-of-type(2) {
+    color: rgb(255,136,191);
+}
+.icon:nth-of-type(3) {
+    color: rgb(255,97,97);
+}
+.icon:nth-of-type(4) {
+    color: rgb(89,128,251);
+}
+.icon:nth-of-type(5) {
+    color: rgb(198,140,12);
+}
+.icon img,.icon p{
+    margin: 0 auto;
+    text-align: center;
+}
+aside .icon img{
+    width: .48rem;
+    height: .48rem;
+}
+aside .icon p{
+    padding-top: .04rem;
+    font-size: .22rem;
+}
+aside .icon p.sm-font{
+    padding: 0;
+    font-size: .18rem;
+}
+
+.dialog{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    width: 2.14rem;
+    height: .8rem;
+    left: 1.2rem;
+    top: 1.24rem;
+    background: url("../images/game/pic_bubble.png") no-repeat;
+    background-size: 100%;
+    font-size: .2rem;
+    color: rgb(90,137,246);
+    text-align: left;
+    opacity: 0;
+    transition: 1s;
+}
+.dialog p{
+    width: 1.54rem;
+    padding-right: .2rem;
+}
+
+.ad{
+    width: 1.8rem;
+    position: absolute;
+    top: .44rem;
+    right: 0;
+    animation: shake linear 2s infinite 1s;
+}
+
+
+.bubble-area{
+    position: absolute;
+    right: 0;
+    top: 1.76rem;
+    width: calc(100% - 2.82rem);
+    height: 4rem;
+    z-index: 998;
+}
+.bubble{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1.56rem;
+    height: 1.56rem;
+    transition: 1s;
+    animation: shake linear 3s infinite;
+}
+.bubble p{
+    font-size: .24rem;
+    color: #fff;
+}
+.bubble-light{
+    background: url("../images/game/icon_bubble_grey.png") no-repeat;
+    background-size: 100%;
+}
+.bubble-dark{
+    background: url("../images/game/icon_bubble_blue.png") no-repeat;
+    background-size: 100%;
+}
+
+.heart{
+    display: none;
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    top: 6.2rem;
+    left: 3rem;
+    animation: moveHeart linear 2s infinite;
+}
+.heart img{
+    position: absolute;
+}
+.heart .bg{
+    width: .4rem;
+    height: .4rem;
+    bottom: 0;
+    right: 0;
+}
+.heart .md{
+    width: .36rem;
+    height: .36rem;
+    bottom: .3rem;
+    right: .55rem;
+}
+.heart .sm{
+    width: .32rem;
+    height: .32rem;
+    bottom: .65rem;
+    right: .12rem;
+}
+
+
+.boat{
+    width: 2.92rem;
+    position: absolute;
+    right: .4rem;
+    top: 4.7rem;
+    /*animation: bounce linear 2s;*/
+}
+
+.beach{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 .4rem;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 2.32rem;
+    bottom: 0;
+    z-index: 999;
+    background: url("../images/game/pic_game_beach01.png") no-repeat;
+    background-size: 100%;
+}
+.beach .left{
+    position: relative;
+    width: 1.2rem;
+    height: 1.08rem;
+}
+.beach .left .header{
+    width: .92rem;
+    height: .92rem;
+    margin: 0 auto;
+    /*box-sizing: border-box;*/
+    border: .04rem solid #759dfd;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.beach .left .label{
+    display: flex;
+    justify-content: center;
+    margin-top: -.28rem;
+    z-index: 900;
+    height: .36rem;
+    line-height: .36rem;
+}
+.beach .left .label p{
+    background: #759dfd;
+    border-radius: .18rem;
+    font-size: .2rem;
+    color: #fff;
+    text-align: center;
+    padding: 0 .1rem;
+}
+.beach .right{
+    width: 1rem;
+}
+
+.cloud{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.right-cloud{
+    position: absolute;
+    right: -35.8rem;
+    top: -3.5rem;
+    width: 35.8rem;
+    z-index: 9999;
+    /*animation: cloudRight ease-in-out 5s;*/
+}
+.left-cloud{
+    position: absolute;
+    left: -35.8rem;
+    top: -.4rem;
+    width: 35.8rem;
+    z-index: 9999;
+    /*animation: cloudLeft ease-in-out 5s;*/
+}
+
+/*广告浮动动画*/
+@keyframes shake{
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-7%);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(7%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+/*小船摇晃动画*/
+@keyframes bounce{
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(-5%);
+    }
+    20% {
+        transform: translateX(0);
+    }
+    30% {
+        transform: translateX(5%);
+    }
+    40% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-3%);
+    }
+    60% {
+        transform: translateX(0);
+    }
+}
+/*转场动画*/
+@keyframes cloudLeft {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(28%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes cloudRight {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-28%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/*爱心动画*/
+@keyframes moveHeart {
+    0% {
+        top: 6.2rem;
+        left: 3rem;
+        transform: scale(1);
+    }
+    30% {
+        top: 5rem;
+        left: 2rem;
+        transform: scale(0.8);
+    }
+    75% {
+        top: 3.2rem;
+        left: 1rem;
+        transform: scale(0.3);
+    }
+    100% {
+        top: 2.8rem;
+        left: 0.4rem;
+        transform: scale(0);
+    }
+}
+
+/*新增*/
+
+@keyframes shakeX{
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-4%);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(4%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.bottle{
+    position: absolute;
+    z-index: 998;
+}
+.bottle-bg{
+    left: 1.52rem;
+    top: 7.18rem;
+}
+.bottle-sm{
+    left: .76rem;
+    top: 5.9rem;
+}
+.dialog2{
+    position: absolute;
+    width: 2.4rem;
+    height: .96rem;
+    top: -1rem;
+    left: .6rem;
+    background: url('../images/game/pic_bubble2.png') no-repeat;
+    background-size: 100%;
+    font-size: .2rem;
+    color: rgb(90,137,246);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 0 .2rem .2rem;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: 1s;
+}
+.bottle-bg img,.bottle-sm img{
+    width: 2.16rem;
+    animation: shakeX linear 2s infinite;
+}
+.icon-vip{
+    width: 1.86rem;
+    height: 1.16rem;
+    position: absolute;
+    bottom: 2.32rem;
+    right: 0;
+    animation: shake linear 2s infinite;
+}
+.popup{
+    width: 4.4rem;
+    height: 5.6rem;
+    border-radius: .26rem;
+    background: #fff;
+    padding: .28rem .12rem .38rem;
+    box-sizing: border-box;
+    margin: 2.16rem auto 0;
+    overflow: hidden;
+}
+.pop-bottle{
+    width: 1.22rem;
+    height: 2.36rem;
+    margin: 0 auto;
+}
+.popup p{
+    font-size: .28rem;
+    color: #333;
+    text-align: center;
+}
+.pop-bottle-info{
+    padding: .18rem 0;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.44rem;
+    height: .64rem;
+    margin: .3rem auto 0;
+    background: linear-gradient(165deg,#e0cf91 0%,#bea258 100%);
+    font-size: .28rem;
+    color: #fff;
+    border-radius: .1rem;
+    box-shadow: 0 0 9px 0 rgba(177, 146, 71, 0.5);
+    box-sizing: border-box;
+}
+.btn-white{
+    background: #fff;
+    color: #b19247;
+    border: .02rem solid #b19247;
+    box-shadow: none;
+}
+.popup1{
+    padding: 0;
+}
+.pop-top{
+    width: 100%;
+    height: 2rem;
+    background: #f8ecd1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.pop-coin-info{
+    padding-top: .2rem;
+}
+.pop-coin{
+    width: 2.02rem;
+    height: 1.32rem;
+    margin: .42rem auto 0;
+}
+
+.popup2{
+    width: 5.4rem;
+    height: 3.2rem;
+    background: #fff;
+    border-radius: .26rem;
+    text-align: center;
+    margin: 2.16rem auto 0;
+    overflow: hidden;
+}
+.pop-main{
+    padding-top: .4rem;
+    height: 2.32rem;
+    box-sizing: border-box;
+}
+.pop-title{
+    font-size: .4rem;
+    color: #000;
+}
+.pop-content{
+    font-size: .28rem;
+    color: #111;
+    padding-top: .28rem;
+}
+.pop-btn{
+    height: .88rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: .02rem solid #e7e7e9;
+    font-size: .34rem;
+    text-align: center;
+}
+.pop-btn p{
+    flex: 1;
+    height: .88rem;
+    line-height: .88rem;
+}
+.pop-btn p:nth-of-type(1) {
+    color: #f50000;
+    border-right: .02rem solid #e7e7e9;
+}
+.pop-btn p:nth-of-type(2) {
+    color: #0076ff;
+}
+.popup1,.popup2{
+    display: none;
+}

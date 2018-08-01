@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <meta content="email=no" name="format-detection">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/getPrize.css">
+    <script src="../lib/jquery-1.9.1.min.js"></script>
+    <script src="../js/common.js"></script>
+    <title>领取礼品</title>
+</head>
+<body>
+<main>
+    <section class="status">
+        <!--礼物（倒计时）-->
+        <div class="gift-status1">
+            <div class="top-info">
+                <p>领取奖品前需绑定手机！</p>
+                <p>去绑定></p>
+            </div>
+            <div class="block">
+                <div class="calendar">
+                    <p class="fail">还差<span id="days"></span>天</p>
+                </div>
+                <p class="timer-info">领取礼品倒计时</p>
+                <div class="btnBox">
+                    <div class="shareBtn">
+                        <p>去阅读并分享</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--礼物（待领）-->
+        <div class="gift-status2">
+            <p class="top">分享完成，可领取如下精美礼品一份</p>
+            <div class="content">
+                <p class="content-title">领取步骤：</p>
+                <!--未绑定手机-->
+                <div class="unbindPhone">
+                    <div class="content-text flex">
+                        <p>1、绑定手机</p>
+                        <div class="btn">绑定手机</div>
+                    </div>
+                    <p class="content-text">2、长按识别如下二维码，联系客服微信，回复“小读领奖”+手机号</p>
+                </div>
+                <!--已绑定手机-->
+                <div class="bindPhone">
+                    <p class="content-text">长按识别如下二维码，联系客服微信，回复“小读领奖”+您绑定的手机号186****1234完整地发给客服。</p>
+                </div>
+                <div class="QR">
+                    <!--此处放二维码-->
+                </div>
+            </div>
+        </div>
+        <!--公用部分-->
+        <div class="bottom-info">
+            <p>* 60天内转发日读到朋友圈30天(2019-12-12前），可领取精美礼品一份。</p>
+            <p>* 领取礼物时需核验，请勿删除分享记录，请勿分组分享。</p>
+            <p>* 新疆、西藏、境外等地区，邮费需自理。</p>
+        </div>
+    </section>
+    <!--公用部分-->
+    <section class="details">
+        <p class="title">可领奖品</p>
+        <div class="imgBox">
+            <img src="../images/getPrize/test.png" alt="" id="prizeUrl">
+        </div>
+        <div class="gift-info">
+            <p class="name" id="prizeName">茉莉纯露一瓶</p>
+            <div class="btn btn-disable">
+                <p id="getGift">领取</p>
+            </div>
+        </div>
+    </section>
+</main>
+<script src="../js/getPrize.js"></script>
+</body>
+</html>

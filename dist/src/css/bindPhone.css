@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'PF-SC';
+    src: url("../fonts/PingFang SC Regular.ttf");
+}
+.confirm-area{
+    position: relative;
+    top: .2rem;
+}
+.label{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .16rem 0;
+    margin: .24rem .3rem 0;
+    border-bottom: .02rem solid #f3f3f3;
+}
+.label img{
+    width: .14rem;
+    height: .26rem;
+}
+.country{
+    font-size: .32rem;
+    color: #999;
+    flex: 1;
+}
+.label input{
+    height: 100%;
+    font-size: .32rem;
+    flex: 1;
+    font-family: 'PF-SC';
+}
+.phone{
+    padding-left: .2rem;
+}
+.phone-header{
+    font-family: 'PF-SC';
+    font-size: .32rem;
+    color: #262626;
+    padding-right: .2rem;
+    border-right: 1px solid #262626;
+}
+.getCode{
+    color: #b19247;
+    font-size: .32rem;
+}
+.btn{
+    width: 6.9rem;
+    height: .8rem;
+    background: #b19247;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .32rem;
+    color: #fff;
+    margin: .84rem auto;
+    border-radius: .1rem;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #999;
+    font-size: .32rem;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #999;
+    font-size: .32rem;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #999;
+    font-size: .32rem;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #999;
+    font-size: .32rem;
+}

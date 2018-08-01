@@ -1,0 +1,21 @@
+.block{
+    padding-top: 2.12rem;
+    display: none;
+}
+img{
+    width: 1.8rem;
+    height: 1.8rem;
+    margin: 0 auto;
+}
+.info{
+    color: #b19247;
+    font-size: .32rem;
+    text-align: center;
+    padding: 1.04rem 0 .48rem;
+}
+.link{
+    color: #666;
+    font-size: .26rem;
+    text-align: center;
+    text-decoration: underline;
+}

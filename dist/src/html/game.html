@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <meta content="email=no" name="format-detection">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/game.css">
+    <script src="../lib/jquery-1.9.1.min.js"></script>
+    <script src="../js/common.js"></script>
+    <title>营养值</title>
+</head>
+<body>
+<main>
+    <aside>
+        <div class="icon">
+            <img src="../images/game/icon_yyz_star.png" alt="">
+            <p>攻略</p>
+        </div>
+        <div class="icon" id="gift">
+            <img src="../images/game/icon_game_gift0@2x.png" alt="" id="gift-img">
+            <p>礼物</p>
+        </div>
+        <div class="icon">
+            <img src="../images/game/icon_game_heart100@2x.png" alt="" id="heart-img">
+            <div>
+                <p>公益</p>
+                <p class="sm-font">10/22</p>
+            </div>
+        </div>
+        <div class="icon">
+            <img src="../images/game/icon_game_bottle@2x.png" alt="">
+            <div>
+                <p>漂流瓶</p>
+                <p class="sm-font">2</p>
+            </div>
+        </div>
+        <div class="icon">
+            <img src="../images/game/icon_game_coin@2x.png" alt="">
+            <p>我的账户</p>
+        </div>
+    </aside>
+    <!--浮动广告-->
+    <div class="ad">
+        <img src="../images/game/pic_biggift.png" alt="">
+    </div>
+    <!--营养值气泡容器-->
+    <div class="bubble-area"></div>
+    <!--小船-->
+    <div class="boat">
+        <img src="../images/game/pic_game_ship.png" alt="">
+    </div>
+    <!--漂流瓶(此处随机显示bg和sm)-->
+    <div class="bottle bottle-bg">
+        <div class="dialog2">
+            <!--js中append-->
+        </div>
+        <img src="../images/game/pic_game_bottle.png" alt="">
+    </div>
+    <div class="bottle bottle-sm">
+        <div class="dialog2"></div>
+        <img src="../images/game/pic_game_bottle2.png" alt="">
+    </div>
+    <!--爱心动画-->
+    <div class="heart">
+        <img src="../images/game/icon_game_heart100@2x.png" alt="" class="bg">
+        <img src="../images/game/icon_game_heart100@2x.png" alt="" class="md">
+        <img src="../images/game/icon_game_heart100@2x.png" alt="" class="sm">
+    </div>
+    <!--底部沙滩-->
+    <div class="beach">
+        <div class="left">
+            <div class="header">
+                <img src="../images/getPrize/test.png" alt="">
+            </div>
+            <div class="label">
+                <p>0/0</p>
+            </div>
+        </div>
+        <div class="right">
+            <img src="../images/game/icon_board.png" alt="">
+        </div>
+    </div>
+    <!--浮动会员icon-->
+    <div class="icon-vip">
+        <img src="../images/game/icon_game_redvip@2x.png" alt="">
+    </div>
+</main>
+<!--转场动画-->
+<div class="cloud">
+    <img src="../images/game/pic_cloud_left.png" alt="" class="left-cloud">
+    <img src="../images/game/pic_cloud_right.png" alt="" class="right-cloud">
+</div>
+<!--底部tab-->
+<footer>
+    <div class="tab">
+        <img src="../images/tabs/icon_book_grey.png" alt="">
+        <p>日读</p>
+    </div>
+    <div class="tab">
+        <img src="../images/tabs/icon_readingroom_grey.png" alt="">
+        <p>书房</p>
+    </div>
+    <div class="tab tab-active">
+        <img src="../images/tabs/icon_water_golden.png" alt="">
+        <p>营养值</p>
+    </div>
+    <div class="tab">
+        <img src="../images/tabs/icon_mine_grey.png" alt="">
+        <p>我的</p>
+    </div>
+</footer>
+<!--弹框-->
+<div class="mask">
+    <!--漂流瓶弹框-->
+    <div class="popup" id="bottle-pop">
+        <img src="../images/game/pic_game_popbottle@2x.png" alt="" class="pop-bottle">
+        <p class="pop-bottle-info">收到一个漂流瓶！里面有什么?</p>
+        <div class="btn-area">
+            <div class="btn">打开看看</div>
+            <div class="btn btn-white" id="toSea">扔回海里</div>
+        </div>
+    </div>
+    <!--代金币弹框-->
+    <div class="popup popup1" id="icon-pop">
+        <div class="pop-top">
+            <p>相遇，</p>
+            <p>是上天最神奇的安排，</p>
+            <p>是一切美好的开始。</p>
+        </div>
+        <img src="../images/game/pic_game_popcoin@2x.png" alt="" class="pop-coin">
+        <p class="pop-coin-info">获得10代金币</p>
+        <div class="btn-area">
+            <div class="btn btn-white">去我的账户看看</div>
+        </div>
+    </div>
+    <!--确认扔回海里弹框-->
+    <div class="popup2">
+        <div class="pop-main">
+            <p class="pop-title">提示</p>
+            <div class="pop-content">
+                <p>漂流瓶里有奖品！</p>
+                <p>确定扔回海里？</p>
+            </div>
+        </div>
+        <div class="pop-btn">
+            <p id="cancel">取消</p>
+            <p>确定</p>
+        </div>
+    </div>
+</div>
+<script src="../js/game.js"></script>
+</body>
+</html>

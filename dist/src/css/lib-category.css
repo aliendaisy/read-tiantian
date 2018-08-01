@@ -1,0 +1,141 @@
+html,body{
+    height: 100%;
+}
+p{
+    margin: 0;
+}
+.header{
+    width: 100%;
+    height: .88rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background: #fff;
+    border-bottom: .02rem solid #f3f3f3;
+}
+.searchBar{
+    width: 6.9rem;
+    height: .6rem;
+    background: #efefef;
+    border-radius: .3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+.searchIcon{
+    width: .6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchBar img{
+    width: .28rem;
+    height: .28rem;
+}
+.searchBar input{
+    font-size: .32rem;
+    flex: 1;
+    height: inherit;
+    background: inherit;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    font-size: .32rem;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    font-size: .32rem;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    font-size: .32rem;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-size: .32rem;
+}
+
+
+.main{
+    height: calc(100% - .88rem);
+    display: flex;
+}
+aside{
+    width: 2.1rem;
+    min-width: 2.1rem;
+    height: 100%;
+    overflow: scroll;
+    box-sizing: border-box;
+    border-right: .02rem solid #eaeaea;
+    background: #f5f5f5;
+    -webkit-overflow-scrolling: touch; /*ios平滑滚动*/
+}
+.sideBar{
+    height: 100%;
+}
+.side-item{
+    height: 1.34rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.side-item p:nth-of-type(1) {
+    font-size: .3rem;
+    color: #535353;
+}
+.side-item p:nth-of-type(2) {
+    font-size: .24rem;
+    color: #878787;
+}
+.side-item.active{
+    background: #fff;
+}
+.side-item.active p:nth-of-type(1) {
+    color: #a18137;
+}
+
+
+.book-img{
+    width: 1.5rem;
+    height: 2rem;
+    border-radius: .06rem;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+    margin-right: .2rem;
+}
+.book-list{
+    height: 100%;
+    overflow: scroll;
+    background: #fff;
+    -webkit-overflow-scrolling: touch; /*ios平滑滚动*/
+}
+.book{
+    display: flex;
+    align-items: center;
+    padding: 0 .3rem 0 .2rem;
+    height: 2.8rem;
+    box-sizing: border-box;
+    border-bottom: .02rem solid #f3f3f3;
+}
+.book-info{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 2rem;
+}
+.book-name{
+    font-weight: bold;
+}
+.book-name span{
+    font-weight: normal;
+}
+
+.book-brief{
+    font-size: .2rem;
+    color: #808080;
+    /*设置多行文字溢出*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}

@@ -1,0 +1,51 @@
+.timer{
+    width: 3.14rem;
+    height: 1rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .72rem;
+    color: #333;
+    font-weight: bold;
+    padding-top: 1.84rem;
+}
+.timer-info{
+    font-size: .28rem;
+    color: #999;
+    text-align: center;
+    padding: .28rem 0;
+}
+.btn-area{
+    margin-bottom: .94rem;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.1rem;
+    height: .72rem;
+    margin: .48rem auto 0;
+    background: linear-gradient(165deg,#e0cf91 0%,#bea258 100%);
+    font-size: .34rem;
+    color: #fff;
+    border-radius: .1rem;
+    box-shadow: 0 0 9px 0 rgba(177, 146, 71, 0.5);
+}
+.btn-disable{
+    background: #999;
+    box-shadow: none;
+}
+.bottom-info{
+    font-size: .24rem;
+    color: #999;
+    text-align: center;
+    margin-bottom: .68rem;
+}
+.ad{
+    width: 6.9rem;
+    height: 2rem;
+    margin: 0 auto;
+    background: #d7d7d7;
+    border-radius: .06rem;
+}

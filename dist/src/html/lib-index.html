@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <meta content="email=no" name="format-detection">
+    <link rel="stylesheet" href="../lib/swiper-4.2.0.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/lib-index.css">
+    <script src="../lib/jquery-1.9.1.min.js"></script>
+    <script src="../js/common.js"></script>
+    <title>书房</title>
+</head>
+<body>
+<!--顶部search框-->
+<div class="header">
+    <div class="searchBar">
+        <div class="searchIcon">
+            <img src="../images/lib-category/icon-search.png" alt="">
+        </div>
+        <input type="text" placeholder="杂志">
+    </div>
+</div>
+<!--banner轮播-->
+<div class="swiper-container" id="banner-swiper">
+    <div class="swiper-wrapper">
+        <!--根据请求接口将图片添加到dom里-->
+        <div class="swiper-slide">
+            <img src="../images/getPrize/test.png" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="../images/getPrize/test.png" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="../images/getPrize/test.png" alt="">
+        </div>
+    </div>
+
+    <!--分页器-->
+    <div class="swiper-pagination"></div>
+</div>
+<!--banner下方内容-->
+<div class="banner-info">
+    <div class="banner-left">
+        <img src="../images/getPrize/test.png" alt="" class="book-img">
+        <div class="book-info">
+            <div>
+                <p class="book-name">孤独星球</p>
+                <p class="font-13 font-666">2018年第12期</p>
+            </div>
+            <p class="re-read">马上续读 >></p>
+        </div>
+    </div>
+    <div class="banner-right">
+        <p class="font-14">最近阅读<span class="font-18">6</span>本</p>
+        <p class="font-12">查看全部 >></p>
+    </div>
+</div>
+<!--专属推荐-->
+<section>
+    <div class="title-label">
+        <p class="title">专属推荐</p>
+        <p class="font-14 font-333">查看更多</p>
+    </div>
+    <ul class="book-list">
+        <li class="book">
+            <img src="../images/getPrize/test.png" alt="" class="book-img">
+            <p class="font-14 font-333">孤独星球</p>
+        </li>
+        <li class="book">
+            <img src="../images/getPrize/test.png" alt="" class="book-img">
+            <p class="font-14 font-333">孤独星球</p>
+        </li>
+        <li class="book">
+            <img src="../images/getPrize/test.png" alt="" class="book-img">
+            <p class="font-14 font-333">孤独星球</p>
+        </li>
+        <li class="book">
+            <img src="../images/getPrize/test.png" alt="" class="book-img">
+            <p class="font-14 font-333">孤独星球</p>
+        </li>
+    </ul>
+    <div class="sec-bottom">
+        <img src="../images/lib-index/icon_room_change@2x.png" alt="">
+        <p class="font-14 font-333">换一换</p>
+    </div>
+</section>
+<!--畅销必读-->
+<section>
+    <div class="title-label">
+        <p class="title">畅销必读</p>
+        <p class="font-14 font-333">查看更多</p>
+    </div>
+    <ul class="book-list">
+        <li class="book">
+            <img src="../images/getPrize/test.png" alt="" class="book-img">
+            <p class="font-14 font-333">孤独星球</p>
+        </li>
+        <li class="book">
+            <img src="../images/getPrize/test.png" alt="" class="book-img">
+            <p class="font-14 font-333">孤独星球</p>
+        </li>
+        <li class="book">
+            <img src="../images/getPrize/test.png" alt="" class="book-img">
+            <p class="font-14 font-333">孤独星球</p>
+        </li>
+        <li class="book">
+            <img src="../images/getPrize/test.png" alt="" class="book-img">
+            <p class="font-14 font-333">孤独星球</p>
+        </li>
+    </ul>
+    <div class="sec-bottom">
+        <img src="../images/lib-index/icon_room_change@2x.png" alt="">
+        <p class="font-14 font-333">换一换</p>
+    </div>
+</section>
+<!--新鲜上架-->
+<section class="sec-spec">
+    <div class="title-label">
+        <p class="title">新鲜上架</p>
+        <p class="font-14 font-333">查看更多</p>
+    </div>
+    <ul class="book-list2">
+        <li class="book2">
+            <img src="../images/getPrize/test.png" alt="" class="book-img">
+            <div class="book-info2">
+                <div>
+                    <p class="font-16 font-333 font-bold">孤独星球</p>
+                    <p class="font-16 font-333">2018年第12期</p>
+                </div>
+                <p class="font-12 book-brief">世界最大的私人旅行指南出版商，由托尼·惠勒和莫琳·惠勒1972年在澳大利亚…</p>
+            </div>
+        </li>
+        <li class="book2">
+            <img src="../images/getPrize/test.png" alt="" class="book-img">
+            <div class="book-info2">
+                <div>
+                    <p class="font-16 font-333 font-bold">孤独星球</p>
+                    <p class="font-16 font-333">2018年第12期</p>
+                </div>
+                <p class="font-12 book-brief">世界最大的私人旅行指南出版商，由托尼·惠勒和莫琳·惠勒1972年在澳大利亚…</p>
+            </div>
+        </li>
+        <li class="book2">
+            <img src="../images/getPrize/test.png" alt="" class="book-img">
+            <div class="book-info2">
+                <div>
+                    <p class="font-16 font-333 font-bold">孤独星球</p>
+                    <p class="font-16 font-333">2018年第12期</p>
+                </div>
+                <p class="font-12 book-brief">世界最大的私人旅行指南出版商，由托尼·惠勒和莫琳·惠勒1972年在澳大利亚…</p>
+            </div>
+        </li>
+    </ul>
+</section>
+<!--热门分类-->
+<section>
+    <div class="title-label">
+        <p class="title">热门分类</p>
+        <p class="font-14 font-333">查看更多</p>
+    </div>
+    <ul class="box-list">
+        <li class="item-box">
+            <p>励志美文</p>
+        </li>
+        <li class="item-box">
+            <p>商业精英</p>
+        </li>
+        <li class="item-box">
+            <p>品牌精选</p>
+        </li>
+        <li class="item-box">
+            <p>生活休闲</p>
+        </li>
+        <li class="item-box">
+            <p>旅游摄影</p>
+        </li>
+        <li class="item-box">
+            <p>爱车一族</p>
+        </li>
+        <li class="item-box">
+            <p>时政新闻</p>
+        </li>
+        <li class="item-box">
+            <p>潮流时尚</p>
+        </li>
+    </ul>
+</section>
+<!--广告位-->
+<div class="swiper-container" id="ad-swiper">
+    <div class="swiper-wrapper">
+        <!--根据请求接口将图片添加到dom里-->
+        <div class="swiper-slide">
+            <img src="../images/getPrize/test.png" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="../images/lib-pdf/01.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="../images/getPrize/test.png" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="../images/lib-pdf/02.jpg" alt="">
+        </div>
+    </div>
+    <!--分页器-->
+    <div class="swiper-pagination"></div>
+</div>
+
+<!--历史上架-->
+<section class="sec-spec last-spec">
+    <div class="title-label">
+        <p class="title">历史上架</p>
+        <p class="font-14 font-333">查看更多</p>
+    </div>
+    <ul class="book-list2">
+        <li class="book2">
+            <img src="../images/getPrize/test.png" alt="" class="book-img">
+            <div class="book-info2">
+                <div>
+                    <p class="font-16 font-333 font-bold">孤独星球</p>
+                    <p class="font-16 font-333">2018年第12期</p>
+                </div>
+                <p class="font-12 book-brief">世界最大的私人旅行指南出版商，由托尼·惠勒和莫琳·惠勒1972年在澳大利亚…</p>
+            </div>
+        </li>
+        <li class="book2">
+            <img src="../images/getPrize/test.png" alt="" class="book-img">
+            <div class="book-info2">
+                <div>
+                    <p class="font-16 font-333 font-bold">孤独星球</p>
+                    <p class="font-16 font-333">2018年第12期</p>
+                </div>
+                <p class="font-12 book-brief">世界最大的私人旅行指南出版商，由托尼·惠勒和莫琳·惠勒1972年在澳大利亚…</p>
+            </div>
+        </li>
+        <li class="book2">
+            <img src="../images/getPrize/test.png" alt="" class="book-img">
+            <div class="book-info2">
+                <div>
+                    <p class="font-16 font-333 font-bold">孤独星球</p>
+                    <p class="font-16 font-333">2018年第12期</p>
+                </div>
+                <p class="font-12 book-brief">世界最大的私人旅行指南出版商，由托尼·惠勒和莫琳·惠勒1972年在澳大利亚…</p>
+            </div>
+        </li>
+    </ul>
+</section>
+<!--底部tab-->
+<footer>
+    <div class="tab">
+        <img src="../images/tabs/icon_book_grey.png" alt="">
+        <p>日读</p>
+    </div>
+    <div class="tab">
+        <img src="../images/tabs/icon_readingroom_grey.png" alt="">
+        <p>书房</p>
+    </div>
+    <div class="tab tab-active">
+        <img src="../images/tabs/icon_water_golden.png" alt="">
+        <p>营养值</p>
+    </div>
+    <div class="tab">
+        <img src="../images/tabs/icon_mine_grey.png" alt="">
+        <p>我的</p>
+    </div>
+</footer>
+</body>
+<script src="../lib/swiper-4.2.0.min.js"></script>
+<script src="../js/lib-index.js"></script>
+</html>

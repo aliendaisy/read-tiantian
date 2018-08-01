@@ -1,0 +1,195 @@
+body{
+    background: #f5f5f5;
+}
+section{
+    background: #fff;
+}
+section:nth-of-type(2){
+    margin-top: .2rem;
+}
+.status .text{
+    font-size: .28rem;
+    color: #333;
+    padding-bottom: .28rem;
+}
+.status .calendar{
+    position: relative;
+    width: 1.46rem;
+    height: 1.46rem;
+    margin: 0 auto;
+    background: url("../images/getPrize/pic_countdown.png") no-repeat;
+    background-size: 100%;
+}
+.status .calendar p{
+    width: 61%;
+    height: 77%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    font-size: .4rem;
+    line-height: 0.53rem;
+    text-align: justify;
+}
+.status .calendar p:after{ /*文字自适应两端对齐布局*/
+    content: "";
+    width: 100%;
+    display: inline-block;
+}
+.status .calendar .success{
+    color: #ff2d2d;
+}
+.status .calendar .fail{
+    color: #666;  /*颜色值未给出，需要调整*/
+}
+
+/*可领取初始隐藏*/
+.instruct{
+    padding: .5rem .4rem .76rem;
+    border-top: 1px solid #e6e6e6;
+    font-size: .28rem;
+    color: #333;
+}
+.instruct .indent{
+    text-indent: .2rem;
+}
+
+
+.btnBox{
+    padding-top: .4rem;
+}
+.btnBox .shareBtn{
+    margin: 0 auto;
+    width: 2.8rem;
+    height: .6rem;
+    line-height: .6rem;
+    background: #b19247;
+    border-radius: .1rem;
+}
+.btnBox .shareBtn p{
+    color: #fff;
+    font-size: .28rem;
+    text-align: center;
+}
+
+
+.details{
+    padding: 0 .3rem;
+    margin-bottom: .82rem;
+}
+.details .title{
+    font-size: .4rem;
+    color: #333;
+    font-weight: bold;
+    padding: .44rem 0 .24rem;
+}
+.details .imgBox{
+    width: 6.9rem;
+    height: 2rem;
+    overflow: hidden;
+}
+.details .imgBox img{
+    border-radius: .1rem;
+}
+.details .name{
+    font-size: .28rem;
+    color: #333;
+}
+
+
+
+/*新增*/
+.block{
+    margin-top: .52rem;
+    padding: 0 .3rem;
+}
+.top-info{
+    width: 100%;
+    height: .62rem;
+    box-sizing: border-box;
+    padding: 0 .3rem;
+    background: #f5f5f5;
+    font-size: .24rem;
+    color: #d60101;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottom-info{
+    font-size: .26rem;
+    color: #999;
+    padding: .32rem .3rem;
+}
+.timer-info{
+    font-size: .28rem;
+    color: #333;
+    text-align: center;
+    padding-top: .16rem;
+}
+.gift-info{
+    width: 100%;
+    box-sizing: border-box;
+    padding: .16rem 0 .3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.4rem;
+    height: .6rem;
+    font-size: .28rem;
+    color: #fff;
+    background: #b19247;
+    border-radius: .1rem;
+}
+.btn-disable{
+     background: #d7d7d7;
+}
+.gift-status2{
+    padding: 0 .3rem;
+}
+.top{
+    height: .94rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: .02rem solid #f3f3f3;
+    color: #d60101;
+    font-size: .28rem;
+}
+.content{
+    padding-top: .3rem;
+}
+.content-title{
+    padding-bottom: .1rem;
+}
+.content p{
+    font-size: .28rem;
+    color: #333;
+}
+.flex{
+    justify-content: space-between;
+    align-items: center;
+}
+.content-text{
+    margin-bottom: .38rem;
+}
+.QR{
+    width: 2.48rem;
+    height: 2.48rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: #d7d7d7;
+    border: .02rem solid #969696;
+    overflow: hidden;
+}
+
+
+.gift-status1,.bindPhone{
+    display: none;
+}

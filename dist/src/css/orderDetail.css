@@ -1,0 +1,43 @@
+body{
+    background: #fff;
+}
+.book-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    box-sizing: border-box;
+    padding: .3rem 0;
+}
+.book{
+    width: 33.3%;
+    text-align: center;
+}
+.tobeContinue{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.8rem;
+    height: 2.4rem;
+    margin: 0 auto;
+    border-radius: .06rem;
+    background: #f0f0f0;
+    font-size: .28rem;
+    color: #999;
+}
+.book-info{
+    padding: .2rem 0 .4rem;
+    font-size: .24rem;
+    color: #999;
+}
+.book-img{
+    margin: 0 auto;
+    width: 1.8rem;
+    height: 2.4rem;
+    border-radius: .06rem;
+}
+.book-title{
+    padding: .2rem 0 .4rem;
+    font-size: .28rem;
+    color: #333;
+}

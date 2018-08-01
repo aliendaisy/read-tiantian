@@ -1,0 +1,98 @@
+.confirm-area{
+    width: 100%;
+}
+.empty{
+    display: none;
+    width: 4.1rem;
+    margin: 0 auto;
+}
+.empty img{
+    width: 1.8rem;
+    height: 1.8rem;
+    margin: 0 auto;
+    padding-top: 1.48rem;
+}
+.empty p{
+    font-size: .32rem;
+    color: #b19247;
+    text-align: center;
+    padding-top: 1.04rem;
+}
+.empty .btn{
+    margin-top: 1.4rem;
+}
+
+.label-box{
+    background: #fff;
+    margin-top: .2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+.label{
+    padding: 0 .28rem;
+    border-bottom: .02rem solid #f3f3f3;
+}
+.main-info{
+    padding: .2rem 0 .1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .28rem;
+}
+.main-info>p{
+    color: #333;
+}
+.sub-btn{
+    width: 1.28rem;
+    height: .5rem;
+    color: #b19247;
+    border: .02rem solid #b19247;
+    border-radius: .36rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.time-info{
+    padding-bottom: .2rem;
+    font-size: .24rem;
+    color: #999;
+}
+.btn-area{
+    width: 4.1rem;
+    margin: 0 auto;
+}
+.btn-area .btn{
+    margin-top: .3rem;
+}
+
+/*杂志*/
+.book-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    box-sizing: border-box;
+    padding: .3rem 0;
+    margin-top: .2rem;
+    background: #fff;
+}
+.book{
+    width: 33.3%;
+    text-align: center;
+}
+.book-img{
+    margin: 0 auto;
+    width: 1.8rem;
+    height: 2.4rem;
+    border-radius: .06rem;
+}
+.book-title{
+    padding: .28rem 0 .16rem;
+    font-size: .28rem;
+    color: #333;
+}
+.book-during{
+    font-size: .2rem;
+    color: #999;
+    margin-bottom: .52rem;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <meta content="email=no" name="format-detection">
+    <link rel="stylesheet" href="../lib/mobileSelect.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/lib-periodical.css">
+    <script src="../lib/jquery-1.9.1.min.js"></script>
+    <script src="../js/common.js"></script>
+    <title></title>
+</head>
+<body>
+    <!--头部导航-->
+    <nav>
+        <div class="item active">
+            <p id="selectYear">2018</p>
+            <img src="../images/calendar/icon_select_triangle@2x.png" alt="">
+        </div>
+        <div class="item">免费期刊</div>
+    </nav>
+    <!--主体部分-->
+    <main>
+        <!--2018-->
+        <div class="main-area" id="item0">
+            <ul class="book-list">
+                <li class="book">
+                    <!--后台获取的书本图片，在book-img的background属性里修改src-->
+                    <div class="book-img">
+                        <!--免费标示(根据后台字段append到dom中)-->
+                        <img src="../images/lib-periodical/pic_magazine_free@2x.png" alt="" class="book-badge book-badge-right">
+                    </div>
+                    <p class="font-14 font-666">2018年第12期018年2</p>
+                    <div class="btn btn-white">打开</div>
+                </li>
+                <li class="book">
+                    <div class="book-img">
+                        <!--非会员标示-->
+                        <img src="../images/lib-periodical/pic_magazine_novip@2x.png" alt="" class="book-badge book-badge-left">
+                        <!--赠送标示-->
+                        <img src="../images/lib-periodical/pic_magazine_send@2x.png" alt="" class="book-badge book-badge-right">
+                    </div>
+                    <p class="font-14 font-666">2018年第12期</p>
+                    <div class="btn">订阅</div>
+                </li>
+                <li class="book">
+                    <div class="book-img">
+                        <img src="../images/lib-periodical/pic_magazine_novip@2x.png" alt="" class="book-badge book-badge-left">
+                    </div>
+                    <p class="font-14 font-666">2018年第12期</p>
+                    <div class="btn btn-white">VIP免费读</div>
+                </li>
+                <li class="book">
+                    <div class="book-img"></div>
+                    <p class="font-14 font-666">2018年第12期</p>
+                    <div class="btn btn-white">VIP免费读</div>
+                </li>
+            </ul>
+        </div>
+        <!--免费期刊-->
+        <div class="main-area" id="item1">
+            <ul class="book-list">
+                <li class="book">
+
+                    <div class="book-img">
+                        <img src="../images/lib-periodical/pic_magazine_free@2x.png" alt="" class="book-badge book-badge-right">
+                    </div>
+                    <p class="font-14 font-666">2018年第12期</p>
+                    <div class="btn btn-white">打开</div>
+                </li>
+            </ul>
+        </div>
+    </main>
+</body>
+<script src="../lib/mobileSelect.js"></script>
+<script src="../js/lib-periodical.js"></script>
+</html>

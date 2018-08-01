@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'PF-SC';
+    src: url("../fonts/PingFang SC Regular.ttf");
+}
+html{
+    font-family: 'PF-SC';
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+img{
+    display: block;
+    width: 100%;
+}
+ul,li{
+    list-style: none;
+}
+div,img,p,a{
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+header{
+    box-sizing: border-box;
+    width: 100%;
+    height: .8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #e6e6e6;
+    background: #fff;
+}
+header p{
+    font-size: .28rem;
+    color: #333;
+}
+/*底部tab*/
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: .98rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+    background: #fff;
+    z-index: 999;
+}
+footer .tab{
+    flex: 1;
+    text-align: center;
+    color: #666;
+}
+footer .tab-active{
+    color: rgb(177,146,71);
+}
+footer .tab img{
+    min-width: .48rem;
+    width: .48rem;
+    height: .48rem;
+    margin: 0 auto;
+}
+footer .tab p{
+    font-size: .2rem;
+    padding-top: .1rem;
+}
+
+input{
+    border: none;
+    outline: none;
+}
+.redFont{
+    color: #ff2d2d;
+}
+.flex{
+    display: flex;
+}
+.mask{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    z-index: 999;
+}
+
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #999;
+    font-size: .28rem;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #999;
+    font-size: .28rem;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #999;
+    font-size: .28rem;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #999;
+    font-size: .28rem;
+}
+
+.font-20{
+    font-size: .4rem;
+}
+.font-18{
+    font-size: .36rem;
+}
+.font-16{
+    font-size: .32rem;
+}
+.font-14{
+    font-size: .28rem;
+}
+.font-13{
+    font-size: .26rem;
+}
+.font-12{
+    font-size: .24rem;
+}
+.font-10{
+    font-size: .2rem;
+}
+.font-999{
+    color: #999;
+}
+.font-666{
+    color: #666;
+}
+.font-333{
+    color: #333;
+}
+.font-878787{
+    color: #878787;
+}
+.font-bold{
+    font-weight: bold;
+}

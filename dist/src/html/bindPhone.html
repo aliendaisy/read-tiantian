@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <meta content="email=no" name="format-detection">
+    <link rel="stylesheet" href="../lib/mobileSelect.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/bindPhone.css">
+    <script src="../lib/jquery-1.9.1.min.js"></script>
+    <script src="../js/common.js"></script>
+    <title>绑定手机</title>
+</head>
+<body>
+<div class="confirm-area">
+    <div class="label">
+        <p class="country" id="country-select">中国</p>
+        <img src="../images/help/icon_desk_rightarrow@2x.png" alt="">
+    </div>
+    <div class="label">
+        <p class="phone-header">+86</p>
+        <input type="text" class="phone" maxlength="11" pattern="[0-9]*">
+    </div>
+    <div class="label">
+        <input type="text" placeholder="验证码">
+        <p class="getCode">获取验证码</p>
+    </div>
+    <div class="btn">
+        <p>绑定手机</p>
+    </div>
+</div>
+</body>
+<script src="../lib/mobileSelect.js"></script>
+<script src="../js/bindPhone.js"></script>
+</html>

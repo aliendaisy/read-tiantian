@@ -1,0 +1,281 @@
+body{
+    background: #f5f5f5;
+}
+/*日历*/
+.calendar-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: .8rem;
+}
+.calendar-header p{
+    padding-right: .12rem;
+    font-size: .32rem;
+    color: #333;
+}
+.calendar-header img{
+    width: .12rem;
+    height: .08rem;
+}
+.week{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: .8rem;
+    background: #fff;
+    font-size: .26rem;
+    color: #262626;
+    border-bottom: .02rem solid #f3f3f3;
+}
+.calendar-date{
+    width: 100% !important;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: .26rem;
+    background: #fff;
+}
+.calendar-date li{
+    font-size: .26rem;
+    width: 14.28%;
+    position: relative;
+}
+.calendar-date li p{
+    width: .48rem;
+    height: .48rem;
+    line-height: .48rem;
+    text-align: center;
+    margin: .26rem auto 0;
+    border-radius: 50%;
+}
+.disable-date{
+    display: none;
+}
+.calendar-date-before{
+    color: #878787 !important;
+}
+#calendar-swiper{
+    border-bottom: 1px solid #f3f3f3;
+    background: #fff;
+}
+.calendar-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: .72rem;
+    padding-right: .22rem;
+    box-sizing: border-box;
+    background: #fff;
+}
+.info{
+    display: flex;
+    align-items: center;
+    padding-right: .2rem;
+}
+.spot{
+    width: .2rem;
+    height: .2rem;
+    border-radius: 50%;
+    margin-right: .06rem;
+}
+.spot-yellow{
+    background: #ffc462;
+}
+.spot-blue{
+    background: #62c6ff;
+}
+.spot-grey{
+    background: #dbdbdb;
+}
+.spot-info{
+    font-size: .26rem;
+    color: #333;
+}
+.badge{
+    position: absolute;
+    top: .14rem;
+    left: .02rem;
+    width: .44rem;
+    height: .26rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .16rem;
+    border-radius: .12rem;
+    background: #fff;
+    z-index: 1;
+}
+.badge-blue{
+    border: .02rem solid #4998ff;
+    color: #4998ff;
+}
+.badge-red{
+    border: .02rem solid #ff4a4a;
+    color: #ff4a4a;
+}
+
+/*免费试读*/
+.carousel{
+    width: 100%;
+    padding: .4rem .3rem .4rem;
+    margin-top: .2rem;
+    box-sizing: border-box;
+    background: #fff;
+}
+.carousel .cap{
+    font-size: .4rem;
+    color: #333;
+    font-weight: bold;
+}
+#book-swiper{
+    padding-top: .4rem;
+}
+#book-swiper .swiper-wrapper{
+    width: 100%;
+}
+#book-swiper .swiper-slide{
+    margin-right: .3rem;
+}
+#book-swiper .swiper-slide:last-child{
+    margin-right: 0;
+}
+.book-img{
+    width: 1.5rem;
+    height: 2rem;
+    border-radius: .06rem;
+}
+.book-time{
+    padding-top: .06rem;
+    font-size: .24rem;
+    color: #333;
+    text-align: center;
+}
+/*btn*/
+.btn{
+    margin: .3rem auto .64rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: .72rem;
+    border-radius: .1rem;
+    background: linear-gradient(165deg,#e0cf91 0%,#bea258 100%);
+    box-shadow: 0 0 9px 0 rgba(177, 146, 71, 0.5);
+}
+.btn p{
+    font-size: .34rem;
+    color: #fff;
+}
+.red-font{
+    color: #ff001f;
+}
+.btn-red{
+    background: #d0021b;
+    box-shadow: none;
+}
+/*mask*/
+.step1,.step2{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+}
+.step2{
+    display: none;
+}
+.guide-info{
+    position: fixed;
+    top: 3rem;
+    bottom: auto;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: .52rem;
+    color: #fff;
+}
+.guide-arrow{
+    width: 1.3rem;
+    height: .14rem;
+    position: fixed;
+    top: 3.6rem;
+    bottom: auto;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.step1 .guide-info{
+    top: 5rem;
+}
+.step1 .guide-arrow{
+    top: 5.5rem;
+}
+.guide-arrow-dip{
+    -webkit-transform: translate(.4rem, -1.3rem) rotate(135deg);
+    -moz-transform: translate(.4rem, -1.3rem) rotate(135deg);
+    -ms-transform: translate(.4rem, -1.3rem) rotate(135deg);
+    -o-transform: translate(.4rem, -1.3rem) rotate(135deg);
+    transform: translate(.4rem, -1.3rem) rotate(135deg);
+}
+.guide-arrow-left{
+    left: .4rem;
+    right: auto;
+}
+.guide-arrow-right{
+    right: .4rem;
+    left: auto;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+/*日读弹框*/
+.mask2{
+    display: none;
+}
+.popup{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.popup1{
+    width: 5.32rem;
+    height: 8.02rem;
+}
+.popup2{
+    width: 4.4rem;
+    height: 7.24rem;
+}
+.pop-card{
+    width: 100%;
+    height: 6.38rem;
+    background: url('../images/calendar/pic_dayread_vipcard2@2x.png') no-repeat;
+    background-size: 100%;
+}
+.pop-main{
+    width: 100%;
+    height: 5.6rem;
+    background: #fff;
+    border-radius: .1rem;
+}
+.pop-close{
+    width: .64rem;
+    height: .64rem;
+    margin: 1rem auto 0;
+    background: url('../images/calendar/icon_popclose@2x.png') no-repeat;
+    background-size: 100%;
+}
