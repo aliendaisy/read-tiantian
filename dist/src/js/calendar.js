@@ -20,8 +20,8 @@ var MONTH = DATE.getMonth() + 1;
 var startYear = 2018; //起始年
 var startMonth = 8; //起始月
 
-var targetYear = 2020; //目标年
-var targetMonth = 10;  //目标月 （实际为当前年月，此处是为了调试）
+var targetYear = 2019; //目标年
+var targetMonth = 12;  //目标月 （实际为当前年月，此处是为了调试）
 
 var year_value = targetYear - startYear;
 var month_value = targetMonth - startMonth;
@@ -36,19 +36,28 @@ function createData() {
             value: i,
             childs: []
         };
-        if(i == startYear) {
-            for(var j = startMonth; j <= 12; j ++) {
-                obj.childs.push({value: j});
-            }
-        }else if(i == targetYear) {
-            for(var j = 1; j <= targetMonth; j ++) {
+        if(startYear == targetYear) {
+            //同一年份
+            for(var j = startMonth; j <= targetMonth; j ++) {
                 obj.childs.push({value: j});
             }
         }else{
-            for(var j = 1; j <= 12; j ++) {
-                obj.childs.push({value: j});
+            //不同年份
+            if(i == startYear) {
+                for(var j = startMonth; j <= 12; j ++) {
+                    obj.childs.push({value: j});
+                }
+            }else if(i == targetYear) {
+                for(var j = 1; j <= targetMonth; j ++) {
+                    obj.childs.push({value: j});
+                }
+            }else{
+                for(var j = 1; j <= 12; j ++) {
+                    obj.childs.push({value: j});
+                }
             }
         }
+
         date_msg.push(obj);
     }
 }
@@ -117,6 +126,10 @@ $.ajax({
 /*************************************************************************************/
 
 
+var pos_0 = date_msg.length - 1; //年份最后一项
+var pos_1 = date_msg[pos_0].childs.length - 1; //月份最后一项
+
+console.log(pos_0, pos_1);
 //选择月份操作
 var mobileSelect = new MobileSelect({
     trigger: '#month',
@@ -124,7 +137,7 @@ var mobileSelect = new MobileSelect({
     wheels: [
         {data: date_msg}
     ],
-    position: [date_msg.length - 1, targetMonth - 1],
+    position: [pos_0, pos_1],
     callback: function(indexArr, data){
         var m_value = data[0].value + '-' + data[1].value;
         $('#month').html(m_value); //顶部赋值
@@ -149,6 +162,9 @@ var calendar_swiper = new Swiper('#calendar-swiper', {
             var initHeight = initMonthWeeks * .74 + .26;
 
             $('#calendar-swiper').css({minHeight: initHeight + 'rem'});
+
+            var id = $('#calendar-swiper .swiper-wrapper').find('.swiper-slide-active').attr('id');
+            $('#month').html(id);  //获取相应slide的id，并赋值到头部
         },
         slideChangeTransitionEnd: function(){
 
